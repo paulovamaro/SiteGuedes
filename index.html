@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guedes Tecnologia e Sistemas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Guedes Tecnologia e Sistemas" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Nossos Serviços</a></li>
+                <li><a href="#contact">Entre em Contato</a></li>
+                <li><a href="#remote-support">Suporte Remoto</a></li>
+                <li><a href="#open-ticket">Abrir Chamado</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="why-us">
+        <h2>Por que Escolher a Guedes Tecnologia e Sistemas?</h2>
+        <p>Anos de experiência no setor de informática. Utilizamos apenas peças de alta qualidade. Soluções feitas sob medida para suas necessidades. Suporte contínuo para garantir que seus sistemas estejam sempre funcionando.</p>
+    </section>
+
+    <section id="about" style="display:none;">
+        <h2>Sobre Nós</h2>
+        <p>Na Guedes Tecnologia e Sistemas, oferecemos soluções completas e personalizadas para todas as suas necessidades de informática. Com anos de experiência no mercado, nosso objetivo é garantir que seus sistemas funcionem de maneira eficiente e segura.</p>
+    </section>
+    
+    <section id="services" style="display:none;">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li><strong>Assistência Técnica</strong>
+                <ul>
+                    <li>Diagnóstico e reparo de computadores e notebooks</li>
+                    <li>Troca e atualização de hardware</li>
+                    <li>Solução de problemas de software</li>
+                </ul>
+            </li>
+            <li><strong>Venda de Equipamentos</strong>
+                <ul>
+                    <li>Computadores novos e usados</li>
+                    <li>Peças e acessórios de informática</li>
+                </ul>
+            </li>
+            <li><strong>Consultoria e Suporte</strong>
+                <ul>
+                    <li>Consultoria em TI para empresas</li>
+                    <li>Suporte remoto e presencial</li>
+                    <li>Planejamento e implementação de redes</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="contact" style="display:none;">
+        <h2>Entre em Contato</h2>
+        <p>Precisa de ajuda com seu computador ou está buscando uma solução personalizada? Entre em contato conosco!</p>
+        <p><strong>Telefone:</strong> (27) 3721-9382</p>
+        <p><strong>Email:</strong> <a href="mailto:contato@infoguedes.com.br">contato@infoguedes.com.br</a></p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado</p>
+    </section>
+
+    <section id="remote-support" style="display:none;">
+        <h2>Suporte Remoto</h2>
+        <p>Escolha a plataforma de suporte remoto de sua preferência:</p>
+        <div class="support-icons">
+            <a href="https://download.anydesk.com/AnyDesk.exe" target="_blank">
+                <img src="img/anydesk-icon.png" alt="AnyDesk">
+            </a>
+            <a href="https://www.teamviewer.com/pt-br/download/" target="_blank">
+                <img src="img/teamviewer-icon.png" alt="TeamViewer">
+            </a>
+        </div>
+    </section>
+
+    <section id="open-ticket" style="display:none;">
+        <h2>Abrir Chamado</h2>
+        <div class="form-container">
+            <form id="ticket-form">
+                <label for="name">Nome do Solicitante:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="phone">Telefone de Contato:</label>
+                <input type="text" id="phone" name="phone" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="issue">Defeito:</label>
+                <textarea id="issue" name="issue" required></textarea><br>
+                <button type="submit">Enviar Chamado</button>
+            </form>
+    </section>
+
+    <div class="whatsapp-button" onclick="window.location.href='https://wa.me/SEU_NUMERO_DE_WHATSAPP'">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp">
+    </div>
+
+    <footer>
+        <p>© 2024 Guedes Tecnologia e Sistemas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

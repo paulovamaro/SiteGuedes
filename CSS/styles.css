@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 15px;
+    line-height: 1.6;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Tenta cobrir toda a área do elemento */
+    color: white;
+    height: 100vh; /* Ajusta a altura do body para 100% da altura da viewport */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    background: none; /* Remove o fundo do cabeçalho */
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background: none; /* Remove o fundo do cabeçalho */
+    overflow: hidden;
+    text-align: center; /* Centraliza os itens de navegação */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Centraliza a lista no container */
+}
+
+nav ul li {
+    display: inline; /* Alinha os itens de navegação horizontalmente */
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px; /* Arredonda os cantos dos botões */
+    border: 2px solid transparent; /* Borda transparente para o efeito de hover */
+    background-color: #333; /* Cor de fundo padrão dos botões */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transição suave apenas para as propriedades desejadas */
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #4CAF50; /* Cor de fundo dos botões ao passar o mouse */
+    border-color: #8f8e94; /* Cor da borda ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para as seções */
+    margin: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+#why-us {
+    display: block;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background: none; /* Remove o fundo do cabeçalho */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a img {
+    width: 50px;
+    height: 50px;
+}
+
+.support-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.support-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.support-icons img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.support-icons span {
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.whatsapp-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.whatsapp-option a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.whatsapp-option img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-option span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
